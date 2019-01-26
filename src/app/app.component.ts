@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subject, Subscription, timer } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { switchMap, delay, takeUntil, tap } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,16 @@ export class AppComponent implements OnInit, OnDestroy {
   private destroy = new Subject<void>();
   private sub: Subscription;
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private translate: TranslateService,
+    private http: HttpClient
+  ) {
+    // this language will be used as a fallback when a translation isn't found in the current language
+    this.translate.setDefaultLang('en');
+
+    // the lang to use, if the lang isn't available, it will use the current loader to get them
+    this.translate.use('en');
+  }
 
   ngOnInit(): void {
     this.sub = timer(2000)
@@ -22,7 +32,8 @@ export class AppComponent implements OnInit, OnDestroy {
         switchMap(() => this.http.get('/assets/test1.txt')),
         tap(() => console.log()),
         delay(3000),
-        takeUntil(this.destroy))
+        takeUntil(this.destroy)
+      )
       .subscribe(res => {
         console.log(res);
       });
@@ -32,5 +43,9 @@ export class AppComponent implements OnInit, OnDestroy {
     console.log(`before ${this.sub.closed}`);
     this.destroy.complete();
     console.log(`after ${this.sub.closed}`);
+  }
+
+  login() {
+
   }
 }
