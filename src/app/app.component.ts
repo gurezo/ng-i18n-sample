@@ -17,12 +17,12 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.sub = timer(2000).pipe(
-      switchMap(() => this.http.get('/assets/test1.txt')),
-      tap(() => console.log()),
-      delay(3000),
-      takeUntil(this.destroy)
-    )
+    this.sub = timer(2000)
+      .pipe(
+        switchMap(() => this.http.get('/assets/test1.txt')),
+        tap(() => console.log()),
+        delay(3000),
+        takeUntil(this.destroy))
       .subscribe(res => {
         console.log(res);
       });
