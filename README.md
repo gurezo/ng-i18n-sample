@@ -1,4 +1,7 @@
-# NgI18nSample
+# ng-i18n-sample
+this is angular samlpe that i18n
+
+using ngx-translate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
