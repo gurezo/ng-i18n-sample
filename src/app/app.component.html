@@ -1,7 +1,8 @@
-<h2 class="title" translate>????</h2>
-<p class="caption" translate>?????????????</p>
+<h2 class="title">{{ 'Member Login / Sign In' | translate }}</h2>
+<p class="caption">{{ 'Input Your Accout Information' | translate }}</p>
 
-<input type="text" matInput placeholder="{{ '????ID' | translate }}">
-<button class="button" (click)="login()"><span translate>????</span></button>
+<input type="text" matInput placeholder="{{ 'Login ID' | translate }}">
+<button class="button" (click)="login()"><span>{{ 'Login' | translate }}</span></button>
+<!-- <button class="button" (click)="login()"><span translate>Login</span></button> -->
 
-<router-outlet></router-outlet>
+

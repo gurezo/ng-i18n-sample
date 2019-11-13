@@ -1,6 +1,7 @@
 {
-  "ログイン": "Member Login / Sign In",
-  "認証情報を入力してください": "Input Your Accout Information",
-  "ログインID": "User ID",
-  "パスワード": "Password"
+  "Member Login / Sign In": "Member Login / Sign In",
+  "Input Your Accout Information": "Input Your Accout Information",
+  "Login ID": "Login ID",
+  "Login": "Login+++",
+  "Password": "Password"
 }

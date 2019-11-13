@@ -2,7 +2,9 @@
 this is angular samlpe that i18n
 
 using [ngx-translate](https://github.com/ngx-translate)
-for referrence [ngx-translateを使うときのTips](https://qiita.com/daikiojm/items/def764b12c8ff2ebbc92)
+#### for referrence 
+- [ngx-translateを使うときのTips](https://qiita.com/daikiojm/items/def764b12c8ff2ebbc92)
+- [How to translate your Angular 8 app with ngx-translate](https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular8-app-with-ngx-translate)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
