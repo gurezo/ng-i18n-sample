@@ -4,7 +4,7 @@ this is angular samlpe that i18n
 using [ngx-translate](https://github.com/ngx-translate)
 for referrence [ngx-translateを使うときのTips](https://qiita.com/daikiojm/items/def764b12c8ff2ebbc92)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
 ## Development server
 
