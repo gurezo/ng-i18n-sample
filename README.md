@@ -1,7 +1,6 @@
 # ng-i18n-sample
 this is angular samlpe that i18n
 
-using [ngx-translate](https://github.com/ngx-translate)
 #### for referrence 
 - [Angular: Runtime i18n Made Simple](https://medium.com/wizdm-genesys/angular-runtime-i18n-made-simple-1f1c510da686)
 
